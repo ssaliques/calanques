@@ -14,6 +14,8 @@
 		BE4468F624865A4F00C88E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4468F424865A4F00C88E17 /* Main.storyboard */; };
 		BE4468F824865A5900C88E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4468F724865A5900C88E17 /* Assets.xcassets */; };
 		BE4468FB24865A5900C88E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4468F924865A5900C88E17 /* LaunchScreen.storyboard */; };
+		BE44690624865F6300C88E17 /* Calanques.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44690524865F6300C88E17 /* Calanques.swift */; };
+		BE4469082486616B00C88E17 /* CalanquesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4469072486616B00C88E17 /* CalanquesCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BE4468F724865A5900C88E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE4468FA24865A5900C88E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE4468FC24865A5900C88E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE44690524865F6300C88E17 /* Calanques.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calanques.swift; sourceTree = "<group>"; };
+		BE4469072486616B00C88E17 /* CalanquesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanquesCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 		BE44690224865E6C00C88E17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE44690524865F6300C88E17 /* Calanques.swift */,
+				BE4469072486616B00C88E17 /* CalanquesCollection.swift */,
 			);
 			name = Model;
 			path = "Modèle";
@@ -168,8 +174,10 @@
 			files = (
 				BE4468F324865A4F00C88E17 /* SecondViewController.swift in Sources */,
 				BE4468F124865A4F00C88E17 /* FirstViewController.swift in Sources */,
+				BE44690624865F6300C88E17 /* Calanques.swift in Sources */,
 				BE4468ED24865A4F00C88E17 /* AppDelegate.swift in Sources */,
 				BE4468EF24865A4F00C88E17 /* SceneDelegate.swift in Sources */,
+				BE4469082486616B00C88E17 /* CalanquesCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
