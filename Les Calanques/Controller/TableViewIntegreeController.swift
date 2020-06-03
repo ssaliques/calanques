@@ -11,12 +11,18 @@ import UIKit
 class TableViewIntegreeController: UITableViewController {
     
     var calanques : [Calanque] = []
+    var cellID = "CalanqueCell"
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         calanques = CalanquesCollection().all()
+        let bg = UIImageView(frame: view.bounds)
+        bg.image = calanques[0].image
+        bg.contentMode = .scaleAspectFill
+        tableView.backgroundColor = .clear
+        tableView.backgroundView = bg
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -38,13 +44,17 @@ class TableViewIntegreeController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let calanque = calanques[indexPath.row]
-        cell.textLabel?.text = calanque.nom
-        cell.imageView?.image = calanque.image
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as? CalanqueCell {
+            cell.setupCell(calanques[indexPath.row])
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+            let calanque = calanques[indexPath.row]
+            cell.textLabel?.text = calanque.nom
+            cell.imageView?.image = calanque.image
+            return cell
+        }
         // dequeu permet de diminuer l'utilisation de la mémoire
-
-        return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -17,6 +17,8 @@
 		BE44690A248682B800C88E17 /* ControllerAvecTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE446909248682B800C88E17 /* ControllerAvecTableView.swift */; };
 		BE44690C248682CE00C88E17 /* ControllerAvecCarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44690B248682CE00C88E17 /* ControllerAvecCarte.swift */; };
 		BE44690E248682FF00C88E17 /* TableViewIntegreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44690D248682FF00C88E17 /* TableViewIntegreeController.swift */; };
+		BE44691024868B9100C88E17 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44690F24868B9100C88E17 /* CalanqueCell.swift */; };
+		BE4469122487DF1B00C88E17 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4469112487DF1B00C88E17 /* ImageRonde.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		BE446909248682B800C88E17 /* ControllerAvecTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerAvecTableView.swift; sourceTree = "<group>"; };
 		BE44690B248682CE00C88E17 /* ControllerAvecCarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerAvecCarte.swift; sourceTree = "<group>"; };
 		BE44690D248682FF00C88E17 /* TableViewIntegreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIntegreeController.swift; sourceTree = "<group>"; };
+		BE44690F24868B9100C88E17 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
+		BE4469112487DF1B00C88E17 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		BE44690324865E7A00C88E17 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BE44690F24868B9100C88E17 /* CalanqueCell.swift */,
+				BE4469112487DF1B00C88E17 /* ImageRonde.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,7 +187,9 @@
 				BE4468ED24865A4F00C88E17 /* AppDelegate.swift in Sources */,
 				BE4468EF24865A4F00C88E17 /* SceneDelegate.swift in Sources */,
 				BE44690C248682CE00C88E17 /* ControllerAvecCarte.swift in Sources */,
+				BE4469122487DF1B00C88E17 /* ImageRonde.swift in Sources */,
 				BE4469082486616B00C88E17 /* CalanquesCollection.swift in Sources */,
+				BE44691024868B9100C88E17 /* CalanqueCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
