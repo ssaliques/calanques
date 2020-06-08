@@ -20,6 +20,7 @@
 		BE44691024868B9100C88E17 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44690F24868B9100C88E17 /* CalanqueCell.swift */; };
 		BE4469122487DF1B00C88E17 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4469112487DF1B00C88E17 /* ImageRonde.swift */; };
 		BE4469142487F29100C88E17 /* CalanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4469132487F29100C88E17 /* CalanqueCellAlternative.swift */; };
+		BE446916248E895600C88E17 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE446915248E895600C88E17 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		BE44690F24868B9100C88E17 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		BE4469112487DF1B00C88E17 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
 		BE4469132487F29100C88E17 /* CalanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternative.swift; sourceTree = "<group>"; };
+		BE446915248E895600C88E17 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				BE446909248682B800C88E17 /* ControllerAvecTableView.swift */,
 				BE44690B248682CE00C88E17 /* ControllerAvecCarte.swift */,
 				BE44690D248682FF00C88E17 /* TableViewIntegreeController.swift */,
+				BE446915248E895600C88E17 /* DetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				BE44690624865F6300C88E17 /* Calanques.swift in Sources */,
 				BE4469142487F29100C88E17 /* CalanqueCellAlternative.swift in Sources */,
+				BE446916248E895600C88E17 /* DetailController.swift in Sources */,
 				BE44690A248682B800C88E17 /* ControllerAvecTableView.swift in Sources */,
 				BE44690E248682FF00C88E17 /* TableViewIntegreeController.swift in Sources */,
 				BE4468ED24865A4F00C88E17 /* AppDelegate.swift in Sources */,
