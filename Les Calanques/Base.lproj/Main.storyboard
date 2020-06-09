@@ -222,7 +222,13 @@
                             <outlet property="delegate" destination="lEy-cz-dbS" id="Bp2-xb-nUj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="joi-oR-tix"/>
+                    <navigationItem key="navigationItem" id="joi-oR-tix">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="bnx-5Y-RbF">
+                            <connections>
+                                <action selector="reloadAction:" destination="lEy-cz-dbS" id="8wg-wf-vZD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="l4f-bC-cdr" kind="show" identifier="Detail" id="bOi-eF-94c"/>
                     </connections>
@@ -370,7 +376,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KVG-Mk-HcD"/>
+        <segue reference="bOi-eF-94c"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="callelongue" width="1600" height="1066"/>
