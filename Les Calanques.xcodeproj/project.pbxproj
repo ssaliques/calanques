@@ -21,6 +21,7 @@
 		BE4469122487DF1B00C88E17 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4469112487DF1B00C88E17 /* ImageRonde.swift */; };
 		BE4469142487F29100C88E17 /* CalanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4469132487F29100C88E17 /* CalanqueCellAlternative.swift */; };
 		BE446916248E895600C88E17 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE446915248E895600C88E17 /* DetailController.swift */; };
+		BE4469182497C46300C88E17 /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4469172497C46300C88E17 /* BoutonArrondi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BE4469112487DF1B00C88E17 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
 		BE4469132487F29100C88E17 /* CalanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternative.swift; sourceTree = "<group>"; };
 		BE446915248E895600C88E17 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		BE4469172497C46300C88E17 /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				BE44690F24868B9100C88E17 /* CalanqueCell.swift */,
 				BE4469112487DF1B00C88E17 /* ImageRonde.swift */,
 				BE4469132487F29100C88E17 /* CalanqueCellAlternative.swift */,
+				BE4469172497C46300C88E17 /* BoutonArrondi.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				BE4468ED24865A4F00C88E17 /* AppDelegate.swift in Sources */,
 				BE4468EF24865A4F00C88E17 /* SceneDelegate.swift in Sources */,
 				BE44690C248682CE00C88E17 /* ControllerAvecCarte.swift in Sources */,
+				BE4469182497C46300C88E17 /* BoutonArrondi.swift in Sources */,
 				BE4469122487DF1B00C88E17 /* ImageRonde.swift in Sources */,
 				BE4469082486616B00C88E17 /* CalanquesCollection.swift in Sources */,
 				BE44691024868B9100C88E17 /* CalanqueCell.swift in Sources */,
