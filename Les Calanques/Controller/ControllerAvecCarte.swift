@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import MapKit
 
 class ControllerAvecCarte: UIViewController {
-
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
     }
     
 
@@ -26,5 +28,10 @@ class ControllerAvecCarte: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func segmentedChanged(_ sender: Any) {
+    }
+    
+    @IBAction func getPosition(_ sender: Any) {
+    }
+    
 }
