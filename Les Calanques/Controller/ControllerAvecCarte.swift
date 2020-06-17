@@ -52,10 +52,11 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
             annotationView?.image = UIImage(named: "placeholder")
             annotationView?.canShowCallout = true
             if annotationView == nil {
-                annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
-                annotationView?.image = UIImage(named: "placeholder")
-                annotationView?.canShowCallout = true
-                print ("la loose")
+                annotationView = MonAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                
+                // annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                // annotationView?.image = UIImage(named: "placeholder")
+                // annotationView?.canShowCallout = true
                 return annotationView
             } else {
                 return annotationView
