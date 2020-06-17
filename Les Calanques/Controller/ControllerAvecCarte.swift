@@ -9,12 +9,13 @@
 import UIKit
 import MapKit
 
-class ControllerAvecCarte: UIViewController {
+class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     var calanques: [Calanque] =  CalanquesCollection().all()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
         addAnnotation()
         
 
@@ -22,12 +23,45 @@ class ControllerAvecCarte: UIViewController {
     }
     
     func addAnnotation() {
+        
         for calanque in calanques {
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = calanque.coordonnees
-            annotation.title = calanque.nom
+            
+            // Annotations de base
+//            let annotation = MKPointAnnotation()
+//            annotation.coordinate = calanque.coordonnees
+//            annotation.title = calanque.nom
+//            mapView.addAnnotation(annotation)
+            
+            // Annotation custom
+            
+            let annotation = MonAnnotation(calanque)
             mapView.addAnnotation(annotation)
+            
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let reuseIdentifier = "reuseID"
+        
+        // Vérifier que ce n'est pas la position de l'utilisateur
+        if annotation.isKind(of: MKUserLocation.self) {
+            return nil
+        }
+        if let anno = annotation as? MonAnnotation {
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
+            annotationView?.image = UIImage(named: "placeholder")
+            annotationView?.canShowCallout = true
+            if annotationView == nil {
+                annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                annotationView?.image = UIImage(named: "placeholder")
+                annotationView?.canShowCallout = true
+                print ("la loose")
+                return annotationView
+            } else {
+                return annotationView
+            }
+        }
+        return nil
     }
 
     /*
