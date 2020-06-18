@@ -306,6 +306,7 @@
                     <navigationItem key="navigationItem" id="Tuc-Qd-wFO">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="TV2-ZC-HWo">
+                            <rect key="frame" x="93.5" y="12" width="227" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Standard"/>
@@ -324,11 +325,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="w7n-BV-qfo" id="tC5-Wm-vZM"/>
+                        <segue destination="l4f-bC-cdr" kind="show" identifier="Detail" id="j6B-nt-cqz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2147.826086956522" y="691.74107142857144"/>
+            <point key="canvasLocation" x="1464" y="692"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="g0H-m1-dAC">
@@ -495,7 +497,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bOi-eF-94c"/>
+        <segue reference="j6B-nt-cqz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="callelongue" width="1600" height="1066"/>

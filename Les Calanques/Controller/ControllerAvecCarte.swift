@@ -22,6 +22,18 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
        
     }
     
+    func toDetail(calanque: Calanque) {
+        performSegue(withIdentifier: "Detail", sender: calanque)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Detail" {
+            if let controller = segue.destination as? DetailController {
+                controller.calanqueRecue = sender as? Calanque
+            }
+        }
+    }
+    
     func addAnnotation() {
         
         for calanque in calanques {
@@ -52,7 +64,11 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
             annotationView?.image = UIImage(named: "placeholder")
             annotationView?.canShowCallout = true
             if annotationView == nil {
-                annotationView = MonAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                
+                //Override
+                //annotationView = MonAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                
+                annotationView = MonAnnotationView(controller: self, annotation: anno, reuseIdentifier: reuseIdentifier)
                 
                 // annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
                 // annotationView?.image = UIImage(named: "placeholder")
